@@ -1,0 +1,8 @@
+--- Web crawler ----
+Yêu cầu: 
+1) Đã cài đặt Nodejs v11.10.0
+2) Đã cài đặt Npm 6.7.0
+------------------------------------------
+
+    "image-downloader": "^3.4.2",
+    "puppeteer": "^1.12.2"
