@@ -10,29 +10,24 @@ const file = require('fs');
     await page.goto('https://www.thegioididong.com/dtdd/samsung-galaxy-m20', { waitUntil: 'networkidle2' });
     //Screen shot
     await page.screenshot({ path: 'data/screenshot.png' });
+
     //Get content all html
     const content = await page.evaluate(() => {
         var get_content = document.getElementsByClassName('right_content')[0].children[0].innerHTML;
         return get_content;
     });
-
     file.writeFileSync('data/index.html', content, function (err) {
         if (err) {
             return console.log(err);
         }
     });
-    //Get content filter 
-    const content_filter = await page.evaluate(() => {
-        var listElem = document.getElementsByClassName('parameter')[0].children;
-        var result = "";
-        for (var i = 0; i < listElem.length; i++) {
-            result += "Thuộc tính: " + listElem[i].children[0].innerText;
-            result += "  |  Giá trị: " + listElem[i].children[1].innerText + "\n";
-        }
-        return result;
+    
+    //Get content text 
+    const context_text = await page.evaluate(() => {
+        var get_content = document.getElementsByClassName('right_content')[0].children[0].innerText;
+        return get_content;
     });
-
-    file.writeFileSync('data/indexFilter.html', content_filter, function (err) {
+    file.writeFileSync('data/indexText.html', context_text, function (err) {
         if (err) {
             return console.log(err);
         }
