@@ -5,6 +5,7 @@ Yêu cầu:
 2) Đã cài đặt Npm 6.7.0
 ------------------------------------------
 Hướng dẫn sử dụng: ( Hệ điều hành Linux Ubuntu 18.04 )
+
 B1) Tải source code - https://github.com/jimmi2051/web-crawler-nodejs.
 
 B2) Sử dụng Terminal và di chuyển tới folder source vừa tải xuống. 
