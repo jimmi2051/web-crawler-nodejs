@@ -22,4 +22,5 @@ B4) Cài đặt các thư viện cần thiết.
         Lệnh cài đặt: npm install --save image-downloader
 		
 B5) Thực hiện crawler dữ liệu
+    
     Gõ dòng lệnh: node index.js
