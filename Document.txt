@@ -3,6 +3,12 @@ Yêu cầu:
 1) Đã cài đặt Nodejs v11.10.0
 2) Đã cài đặt Npm 6.7.0
 ------------------------------------------
+Chức năng: 
+1. Truy cập vào trang https://www.thegioididong.com/dtdd/samsung-galaxy-m20
+2. Lưu lại nội dung HTML phần "Thông số kỹ thuật" (hình picture-1) vào 1 file index.html được đặt tại vị trí NGUYENLYTHANH_PRACTICE_WC_TGDD/data/index.html
+3. Tải hình sản phẩm (hình picture-2) đặt trong thư mục NGUYENLYTHANH_PRACTICE_WC_TGDD/data
+4. Chụp screenshot màn hình, và lưu lại tại vị trí NGUYENLYTHANH_PRACTICE_WC_TGDD/data/screenshot.png
+------------------------------------------
 Hướng dẫn sử dụng: ( Hệ điều hành Linux Ubuntu 18.04 )
 B1) Tải source code - https://github.com/jimmi2051/web-crawler-nodejs.
 B2) Sử dụng Terminal và di chuyển tới folder source vừa tải xuống. 
